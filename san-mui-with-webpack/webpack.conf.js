@@ -17,13 +17,24 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/
+                include: [
+                    path.resolve(__dirname, 'node_modules/san-mui'),
+                    path.resolve(__dirname, 'src')
+                ] 
             },
             {
                 test: /\.css$/,
                 loaders: [
                     'style-loader',
                     'css-loader'
+                ]
+            },
+            {
+                test: /\.styl$/,
+                loaders: [
+                    'style-loader',
+                    'css-loader',
+                    'stylus-loader'
                 ]
             },
             {
