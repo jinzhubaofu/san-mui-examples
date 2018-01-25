@@ -6,7 +6,9 @@
 import {Button, Icon} from 'san-mui';
 import {Component} from 'san';
 import './index.css';
-import 'san-mui/lib/index.css';
+// import 'san-mui/lib/index.css';
+import 'san-mui/lib/Button/index.styl';
+import 'san-mui/lib/Icon/icon.styl';
 
 class App extends Component {
 
